@@ -13,5 +13,11 @@ A modern, responsive React + Tailwind component that showcases framework feature
 
 1. Clone the repository:  
 ```bash
-git clone https://github.com/yourusername/framework-tiles-ui.git
-cd framework-tiles-ui
+git clone https://github.com/radwan503/FrogX.git
+
+npm install
+# or
+yarn install
+
+
+npm run dev
