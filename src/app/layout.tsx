@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import '@/styles/index.scss'
+import '@/styles/index.scss';
 import { AntdRegistry } from '@ant-design/nextjs-registry';
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -13,51 +14,64 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
-  title: "Frog X | React + Tailwind Component",
+export const metadata: Metadata = {
+  title: "Frog X | React + Tailwind Component Library",
   description:
-    "A modern, responsive React + Tailwind UI component with gradient hover effects, perfect for showcasing features in landing pages, design systems, and developer documentation.",
+    "Frog X is a modern React + Tailwind UI component library with gradient hover effects and responsive layouts. Perfect for landing pages, design systems, and developer documentation.",
   keywords: [
+    "Frog X UI",
     "React UI components",
-    "Tailwind CSS tiles",
-    "Feature grid layout",
+    "Tailwind CSS components",
+    "Gradient hover effects",
     "Responsive design system",
+    "Feature grid layout",
     "Lucide React icons",
-    "Gradient hover UI",
+    "Open source UI library",
   ],
-  authors: [{ name: "Radwan Ahmed" }],
+  authors: [
+    { name: "Radwan Ahmed", url: "https://github.com/radwananik" }
+  ],
+  creator: "Radwan Ahmed",
+  publisher: "Frog X",
   openGraph: {
-    title: "Frog X LAnding Page",
+    title: "Frog X | Modern React + Tailwind Component Library",
     description:
-      "Beautiful responsive React + Tailwind component with gradient hover effects and feature grid design.",
+      "Discover Frog X – a beautiful React + Tailwind UI component set with gradient hover effects and responsive grids for modern web applications.",
     url: "https://yourdomain.com",
-    siteName: "Frog X LAnding Page",
+    siteName: "Frog X",
     images: [
       {
         url: "https://yourdomain.com/preview.png",
         width: 1200,
         height: 630,
-        alt: "Frog X LAnding Page Preview",
+        alt: "Frog X UI Preview",
       },
     ],
     locale: "en_US",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Frog X | React + Tailwind Components",
+    description:
+      "A responsive React + Tailwind UI component library with gradient hover effects and clean design.",
+    images: ["https://yourdomain.com/preview.png"],
+    creator: "@yourtwitterhandle",
+  },
+  metadataBase: new URL("https://yourdomain.com"),
+  category: "technology",
 };
-
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <AntdRegistry>
-          {children}
-        </AntdRegistry>
+        <AntdRegistry>{children}</AntdRegistry>
       </body>
     </html>
-  )
+  );
 }

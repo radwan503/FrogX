@@ -1,5 +1,4 @@
 'use client'
-import { useEffect } from "react";
 import Header from "@/components/_common/Header";
 import Hero from "@/components/Hero";
 import Paradigm from "@/components/Paradigm";
