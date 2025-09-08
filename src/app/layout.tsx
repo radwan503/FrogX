@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     "Open source UI library",
   ],
   authors: [
-    { name: "Radwan Ahmed", url: "https://github.com/radwananik" }
+    { name: "Radwan Ahmed", url: "https://radwan503.github.io" }
   ],
   creator: "Radwan Ahmed",
   publisher: "Frog X",
@@ -37,16 +37,8 @@ export const metadata: Metadata = {
     title: "Frog X | Modern React + Tailwind Component Library",
     description:
       "Discover Frog X – a beautiful React + Tailwind UI component set with gradient hover effects and responsive grids for modern web applications.",
-    url: "https://yourdomain.com",
+    url: "https://radwan503.github.io/FrogX/",
     siteName: "Frog X",
-    images: [
-      {
-        url: "https://yourdomain.com/preview.png",
-        width: 1200,
-        height: 630,
-        alt: "Frog X UI Preview",
-      },
-    ],
     locale: "en_US",
     type: "website",
   },
@@ -55,10 +47,10 @@ export const metadata: Metadata = {
     title: "Frog X | React + Tailwind Components",
     description:
       "A responsive React + Tailwind UI component library with gradient hover effects and clean design.",
-    images: ["https://yourdomain.com/preview.png"],
+    images: ["https://radwan503.github.io/FrogX/"],
     creator: "@yourtwitterhandle",
   },
-  metadataBase: new URL("https://yourdomain.com"),
+  metadataBase: new URL("https://radwan503.github.io/FrogX/"),
   category: "technology",
 };
 
